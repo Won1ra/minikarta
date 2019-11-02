@@ -152,7 +152,7 @@ window.addEventListener('load', function () {
             return;
         coorDOM = document.getElementById("coords");
         coordsXY = coorDOM.innerHTML.split(/(\d+)/)
-        //console.log(coordsXY);
+        console.log(coordsXY);
         x_new = (coordsXY[0].substring(2) + coordsXY[1])*1
         y_new = (coordsXY[2].substring(3) + coordsXY[3])*1;
         console.log({x_new,y_new});
