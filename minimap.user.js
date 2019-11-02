@@ -63,7 +63,7 @@ window.addEventListener('load', function () {
         '</div><div id="minimap-config" style="line-height:20px;">' +
         '<span id="hide-map" style="cursor:pointer;">Скрыть' +
         '</span> | <span id="follow-mouse" style="cursor:pointer;"Follow mous' +
-        '</span> | Увеличение: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '</span> | zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
         '</div>' +
         '</div>';
@@ -96,7 +96,7 @@ window.addEventListener('load', function () {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Haritayı Göster";
+        document.getElementById("minimap-text").innerHTML = "Показать";
         document.getElementById("minimap-text").style.cursor = "pointer";
     };
     document.getElementById("minimap-text").onclick = function () {
