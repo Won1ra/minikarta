@@ -272,9 +272,9 @@ function loadTemplates() {
         var temp_yb = parseInt(template_list[template]["y"]) + parseInt(template_list[template]["height"]);
         // if (temp_xr <= x_left || temp_yb <= y_top || temp_x >= x_right || temp_y >= y_bottom)
         //    continue
-        if (!x_window.between(temp_x-range*1, temp_xr+range*1))
+        if (!x_window.between(temp_x-range+1, temp_xr+range+1))
             continue
-        if (!y_window.between(temp_y-range*1, temp_yb+range*1))
+        if (!y_window.between(temp_y-range+1, temp_yb+range+1))
             continue
         console.log("Template " + template + " is in range!");
         // console.log(x_window, y_window);
