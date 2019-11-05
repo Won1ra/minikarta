@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name       	 TheSkyZone MAP
+// @name       	 ...
 // @namespace    http://tampermonkey.net/
 // @version      31.31.69
 // @description  TheSkyZone MAP
