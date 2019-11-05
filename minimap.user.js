@@ -12,7 +12,7 @@
 // @grant        none
 // ==/UserScript==
 //syka blat
-//тут был рома
+//ГІГіГІ ГЎГ»Г« Г°Г®Г¬Г 
 //                                       ...
 
 Number.prototype.between = function(a, b) {
@@ -21,7 +21,7 @@ Number.prototype.between = function(a, b) {
   return this > min && this < max;
 };
 var range = 25;
-window.baseTepmlateUrl = 'https://raw.githubusercontent.com/rony2627/1234567890/master/';
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/RonyRam/minikarta/master/';
 
 window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
 
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
-    div.innerHTML = '<div id="Спрятать" style="position: absolute; right: 1em; bottom: 1em;">' +
+    div.innerHTML = '<div id="Г‘ГЇГ°ГїГІГ ГІГј" style="position: absolute; right: 1em; bottom: 1em;">' +
         '<div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.0); color: rgb(170, 170, 170); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 1px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
         '<div id="minimap-text" style="display: block;cursor: pointer;width: 150px;">...</div>' +
@@ -67,9 +67,9 @@ window.addEventListener('load', function () {
         '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-cursor" style="width: 100%;height: 100%;z-index:3;position:absolute;top:0;left:0;box-shadow: 0 0 20px 7px black;" width="220" height="200"></canvas>' +
         '</div><div id="minimap-config" style="line-height:127px;">' +
-        '<span id="hide-map" style="cursor:pointer;"> Скрыть' +
+        '<span id="hide-map" style="cursor:pointer;"> Г‘ГЄГ°Г»ГІГј' +
         '</span> | <span id="follow-mouse" style="cursor:pointer;"Seguir o mouse' +
-        '</span> | Масштаб: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '</span> | ГЊГ Г±ГёГІГ ГЎ: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
         '</div>' +
         '</div>';
@@ -102,7 +102,7 @@ window.addEventListener('load', function () {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Показать";
+        document.getElementById("minimap-text").innerHTML = "ГЏГ®ГЄГ Г§Г ГІГј";
         document.getElementById("minimap-text").style.cursor = "pointer";
     };
     document.getElementById("minimap-text").onclick = function () {
@@ -201,7 +201,7 @@ function toggleShow() {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Показать";
+        document.getElementById("minimap-text").innerHTML = "ГЏГ®ГЄГ Г§Г ГІГј";
         document.getElementById("minimapbg").onclick = function () {
             toggleShow()
         };
@@ -276,7 +276,7 @@ function loadTemplates() {
         if (zooming_in == false && zooming_out == false) {
             document.getElementById("minimap-box").style.display = "none";
             document.getElementById("minimap-text").style.display = "block";
-            document.getElementById("minimap-text").innerHTML = "Тут ничего нет.";
+            document.getElementById("minimap-text").innerHTML = "Г’ГіГІ Г­ГЁГ·ГҐГЈГ® Г­ГҐГІ.";
         }
     } else {
         document.getElementById("minimap-box").style.display = "block";
