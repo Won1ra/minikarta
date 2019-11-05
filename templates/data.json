@@ -6,6 +6,13 @@
     "width": 57,
     "height": 57
    },
+   "BJ": {
+    "name": "BJ.png",
+    "x": 3400,
+    "y": -2600,
+    "width": 640,
+    "height": 518
+   },
   "SkyBase": {
     "name": "Skybase.png",
     "x": 1,
