@@ -3,10 +3,10 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.0.1
 // @description  ...
-// @author       ...
+// @author       a v popu to zachem?
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
-// @homepage     https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
+// @homepage     https://github.com/RonyRam?tab=repositories
 // @updateURL    https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
 // @downloadURL  https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
 // @grant        none
