@@ -39,8 +39,10 @@ window.addEventListener('load', function () {
     x = 0;
     y = 0;
   
-    console_print (x);
-    console_print (y);
+     console.log (x);
+     console.log ("______________");
+     console.log (y);
+     console.log ("______________");
   
     //list of all available templates
     template_list = null;
