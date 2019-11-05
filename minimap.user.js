@@ -11,6 +11,7 @@
 // @downloadURL  https://raw.githubusercontent.com/ConsoleBey/TheSkyZone/master/minimap.user.js
 // @grant        none
 // ==/UserScript==
+//           ...           ...           ...           ...           ...           ...           ...           ...
 
 Number.prototype.between = function(a, b) {
   var min = Math.min.apply(Math, [a, b]),
