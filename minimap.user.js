@@ -1,15 +1,7 @@
 // ==UserScript==
-// @name       	 ...
-// @namespace    http://tampermonkey.net/
+// @name         Minimap
 // @version      0.0.1
-// @description  ...
-// @author       a v popu to zachem?
-// @match        https://pixelzone.io/*
-// @match        http://pixelzone.io/*
-// @homepage     https://github.com/RonyRam?tab=repositories
-// @updateURL    https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
-// @downloadURL  https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
-// @grant        none
+// @match        *://pixelzone.io/*
 // ==/UserScript==
 
 Number.prototype.between = function(a, b) {
