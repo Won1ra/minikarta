@@ -38,6 +38,10 @@ window.addEventListener('load', function () {
     //coordinates of cursor
     x = 0;
     y = 0;
+  
+    document.write(x);
+    document.write(y);
+  
     //list of all available templates
     template_list = null;
     zoomlevel = 15;
