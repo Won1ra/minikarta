@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name       	 TheSkyZone MAP
+// @name       	 ...
 // @namespace    http://tampermonkey.net/
-// @version      31.31.69
+// @version      0.0.1
 // @description  TheSkyZone MAP
-// @author       ConsoleBey https://discord.gg/Tj3h8en
+// @author       ...
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
-// @homepage     https://github.com/ConsoleBey/TheSkyZone/
-// @updateURL    https://raw.githubusercontent.com/ConsoleBey/TheSkyZone/master/minimap.user.js
-// @downloadURL  https://raw.githubusercontent.com/ConsoleBey/TheSkyZone/master/minimap.user.js
+// @homepage     https://github.com/RonyRam/minikarta
+// @updateURL    https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
+// @downloadURL  https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
 // @grant        none
 // ==/UserScript==
 //           ...           ...           ...           ...           ...           ...           ...           ...
