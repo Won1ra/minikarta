@@ -39,11 +39,6 @@ window.addEventListener('load', function () {
     x = 0;
     y = 0;
   
-     console.log (x);
-     console.log ("______________");
-     console.log (y);
-     console.log ("______________");
-  
     //list of all available templates
     template_list = null;
     zoomlevel = 15;
