@@ -6,7 +6,7 @@
 // @author       ...
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
-// @homepage     ...
+// @homepage     https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
 // @updateURL    https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
 // @downloadURL  https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
 // @grant        none
