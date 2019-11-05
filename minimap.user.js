@@ -7,11 +7,10 @@
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
 // @homepage     https://github.com/RonyRam/minikarta
-// @updateURL    https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
-// @downloadURL  https://github.com/RonyRam/minikarta/raw/master/minimap.user.js
+// @updateURL    https://raw.githubusercontent.com/RonyRam/minikarta/master/
+// @downloadURL  https://raw.githubusercontent.com/RonyRam/minikarta/master/
 // @grant        none
 // ==/UserScript==
-//           ...           ...           ...           ...           ...           ...           ...           ...
 
 Number.prototype.between = function(a, b) {
   var min = Math.min.apply(Math, [a, b]),
