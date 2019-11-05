@@ -25,9 +25,9 @@ window.baseTepmlateUrl = 'https://raw.githubusercontent.com/RonyRam/minikarta/ma
 
 window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
-    re = /(.*)\/\?p=(\-?(?:\d*)),(\-?(?:\d*))/g;
+    var re = /(.*)\/\?p=(\-?(?:\d*)),(\-?(?:\d*))/g;
     //Regular Expression to get coordinates from cursor
-    rec = /x\:(\d*) y\:(\d*)/g;
+    var rec = /x\:(\d*) y\:(\d*)/g;
     gameWindow = document.getElementById("canvas");
     //DOM element of the displayed X, Y variables
     coorDOM = null;
