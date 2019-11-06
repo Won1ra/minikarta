@@ -144,7 +144,7 @@ function  init(){
             setTimeout(getCenter, 100);
     }, false);
 
-    gameWindow.addEventListener('mousemove', function (evt) {
+    gameWindow.addEventListener('coordinatesNote', function (evt) {
         if (!toggle_show)
             return;
         coorDOM = document.getElementById("coords");
