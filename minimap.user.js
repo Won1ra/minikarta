@@ -15,7 +15,7 @@ Number.prototype.between = function(a, b) {
 var range = 25;
 window.baseTepmlateUrl = 'https://raw.githubusercontent.com/RonyRam/minikarta/master/';
 
-setTimeout(init, 1000);
+setTimeout(init, 3000);
 
 function  init(){
 window.addEventListener('load', function () {
