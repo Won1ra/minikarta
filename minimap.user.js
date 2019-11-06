@@ -18,7 +18,6 @@ window.baseTepmlateUrl = 'https://raw.githubusercontent.com/RonyRam/minikarta/ma
 setTimeout(init, 3000);
 
 function  init(){
-window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
     re = /(.*)\/\?p=(\-?(?:\d*)),(\-?(?:\d*))/g;
     //Regular Expression to get coordinates from cursor
@@ -168,8 +167,6 @@ window.addEventListener('load', function () {
     }, false);
 
     updateloop();
-
-}, false);
 
 function updateloop() {
 
