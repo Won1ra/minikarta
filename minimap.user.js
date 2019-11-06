@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         Minimap
 // @version      0.0.1
-// @match        *://pixelzone.io/*
+// @match        https://pixelzone.io/*
+// @match        http://pixelzone.io/*
 // ==/UserScript==
 
 Number.prototype.between = function(a, b) {
