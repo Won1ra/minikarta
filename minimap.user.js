@@ -144,15 +144,17 @@ function  init(){
             setTimeout(getCenter, 100);
     }, false);
 
-    gameWindow.addEventListener('coordinatesNote', function (evt) {
+    gameWindow.addEventListener('mousemove', function (evt) {
         if (!toggle_show)
             return;
-        coorDOM = document.getElementById("coords");
+        coorDOM = document.getElementById("coordinatesNote");
         coordsXY = coorDOM.innerHTML.split(/(\d+)/)
-        //console.log(coordsXY);
+        console.log(coordsXY);
+      
         x_new = (coordsXY[0].substring(2) + coordsXY[1])*1
         y_new = (coordsXY[2].substring(3) + coordsXY[3])*1;
-        //console.log({x_new,y_new});
+        console.log({x_new,y_new});
+      
         if (x != x_new || y != y_new) {
             x = parseInt(x_new);
             y = parseInt(y_new);
