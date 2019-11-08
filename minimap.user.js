@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Minimap.test
-// @version      test
+// @version      0.0.2
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
 // ==/UserScript==
