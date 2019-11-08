@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         Minimap
-// @version      0.0.2
+// @name         Minimap.test
+// @version      test
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
 // ==/UserScript==
@@ -61,7 +61,8 @@ function  init(){
         '<span id="hide-map" style="cursor:pointer;">Скрыть' +
         '</span> | <span id="follow-mouse" style="cursor:pointer;"Follow mous' +
         '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
-        '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
+        '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>'		+
+		'<span id="tet" style="position: absolute; right: 15px;">test</span>'
         '</div>' +
         '</div>';
     document.body.appendChild(div);
