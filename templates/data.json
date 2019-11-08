@@ -15,10 +15,10 @@
    },
     "sanitar": {
     "name": "sanitar.png",
-    "x": 3456,
-    "y": -3461,
-    "width": 4048,
-    "height": 1271
+    "x": 4048,
+    "y": 1271,
+    "width": 33,
+    "height": 49
    },
   "SkyBase": {
     "name": "Skybase.png",
