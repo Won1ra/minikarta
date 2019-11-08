@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Minimap
-// @version      0.0.1
+// @version      0.0.2
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
 // ==/UserScript==
@@ -51,14 +51,14 @@ function  init(){
 
      var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
-    div.innerHTML = '<style>.grecaptcha-badge{display: none;}</style>   <div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +        '<div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
+    div.innerHTML = '<style>.grecaptcha-badge{display: none;}</style>   <div id="minimapbg" style="position: absolute; right: 0px; top: 0px;">' +        '<div class="posy" id="posyt" style= color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
         '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
         '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
-        '</div><div id="minimap-config" style="line-height:20px;">' +
-        '<span id="hide-map" style="cursor:pointer;">Hide minimap' +
+        '</div><div id="minimap-config" style="line-height:20px; background-color:#080808;">' +
+        '<span id="hide-map" style="cursor:pointer;">Скрыть' +
         '</span> | <span id="follow-mouse" style="cursor:pointer;"Follow mous' +
         '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
@@ -93,7 +93,7 @@ function  init(){
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Haritay? Goster";
+        document.getElementById("minimap-text").innerHTML = "Показать";
         document.getElementById("minimap-text").style.cursor = "pointer";
     };
     document.getElementById("minimap-text").onclick = function () {
@@ -109,12 +109,16 @@ function  init(){
         zooming_in = true;
         zooming_out = false;
         zoomIn();
+		console.log ("+");
+		console.log (zooming_in);
+	    console.log (zooming_out);
     }, false);
     document.getElementById("zoom-minus").addEventListener('mousedown', function (e) {
         e.preventDefault();
         zooming_out = true;
         zooming_in = false;
         zoomOut();
+		console.log ("-");
     }, false);
     document.getElementById("zoom-plus").addEventListener('mouseup', function (e) {
         zooming_in = false;
@@ -123,7 +127,7 @@ function  init(){
         zooming_out = false;
     }, false);
     document.getElementById("follow-mouse").onclick = function () {
-        toggle_follow = !toggle_follow;
+       /* toggle_follow = !toggle_follow;
         if (toggle_follow) {
             this.innerHTML = "Fareyi Takip Et";
             loadTemplates();
@@ -133,7 +137,7 @@ function  init(){
         } else {
             this.innerHTML = "Ekran? Takip Et";
             getCenter();
-        }
+        } */
     };
 
     gameWindow = document.getElementById("canvas");
@@ -141,7 +145,7 @@ function  init(){
         if (!toggle_show)
             return;
         if (!toggle_follow)
-            setTimeout(getCenter, 100);
+            setTimeout(getCenter, 50);
     }, false);
 
     gameWindow.addEventListener('mousemove', function (evt) {
@@ -149,11 +153,11 @@ function  init(){
             return;
         coorDOM = document.getElementById("coordinatesNote");
         coordsXY = coorDOM.innerHTML.split(/(\d+)/)
-        console.log(coordsXY);
+        //console.log(coordsXY);
       
         x_new = (coordsXY[0].substring(2) + coordsXY[1])*1
         y_new = (coordsXY[2].substring(3) + coordsXY[3])*1;
-        console.log({x_new,y_new});
+        //console.log({x_new,y_new});
       
         if (x != x_new || y != y_new) {
             x = parseInt(x_new);
@@ -208,7 +212,7 @@ function toggleShow() {
         document.getElementById("minimap-text").style.display = "block";
         document.getElementById("minimap-text").innerHTML = "Show Minimap";
         document.getElementById("minimapbg").onclick = function () {
-            toggleShow()
+			toggleShow()
         };
     }
 }
@@ -225,6 +229,7 @@ function zoomIn() {
     drawCursor();
     loadTemplates();
     setTimeout(zoomIn, zoom_time);
+	console.log("zoomIn()");
 }
 
 function zoomOut() {
@@ -239,6 +244,7 @@ function zoomOut() {
     drawCursor();
     loadTemplates();
     setTimeout(zoomOut, zoom_time);
+	console.log("zoomOut()");
 }
 
 function loadTemplates() {
@@ -251,11 +257,13 @@ function loadTemplates() {
     var x_right = x_window * 1 + minimap.width / zoomlevel / 2;
     var y_top = y_window * 1 - minimap.height / zoomlevel / 2;
     var y_bottom = y_window * 1 + minimap.height / zoomlevel / 2;
-    //console.log("x_left : " + x_left);
-    //console.log("x_right : " + x_right);
-    //console.log("y_top : " + y_top);
-    //console.log("y_bottom : " + y_bottom);
-    //console.log(template_list);
+    //
+	console.log("x_left : " + x_left);
+    console.log("x_right : " + x_right);
+    console.log("y_top : " + y_top);
+    console.log("y_bottom : " + y_bottom);
+    console.log(template_list);
+	//
     var keys = [];
     for (var k in template_list) keys.push(k);
     needed_templates = [];
@@ -274,14 +282,14 @@ function loadTemplates() {
         if (!y_window.between(temp_y-range*1, temp_yb+range*1))
             continue
         console.log("Template " + template + " is in range!");
-        // console.log(x_window, y_window);
+         console.log(x_window, y_window);
         needed_templates.push(template);
     }
     if (needed_templates.length == 0) {
         if (zooming_in == false && zooming_out == false) {
             document.getElementById("minimap-box").style.display = "none";
             document.getElementById("minimap-text").style.display = "block";
-            document.getElementById("minimap-text").innerHTML = "No template nearby.";
+            document.getElementById("minimap-text").innerHTML = "здесь ничего нету";
         }
     } else {
         document.getElementById("minimap-box").style.display = "block";
