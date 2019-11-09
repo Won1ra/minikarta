@@ -256,13 +256,13 @@ function loadTemplates() {
     var x_right = x_window * 1 + minimap.width / zoomlevel / 2;
     var y_top = y_window * 1 - minimap.height / zoomlevel / 2;
     var y_bottom = y_window * 1 + minimap.height / zoomlevel / 2;
-    //
+    /*
 	console.log("x_left : " + x_left);
     console.log("x_right : " + x_right);
     console.log("y_top : " + y_top);
     console.log("y_bottom : " + y_bottom);
     console.log(template_list);
-	//
+	*/
     var keys = [];
     for (var k in template_list) keys.push(k);
     needed_templates = [];
