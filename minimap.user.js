@@ -1,9 +1,12 @@
 // ==UserScript==
 // @name         Minimap
-// @version      0.0.2
+// @version      0.0.3
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
 // ==/UserScript==
+/*
+                    ...
+*/
 
 Number.prototype.between = function(a, b) {
   var min = Math.min.apply(Math, [a, b]),
@@ -49,7 +52,7 @@ function  init(){
 
      var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
-    div.innerHTML = '<style>.grecaptcha-badge{display: none;}</style>   <div id="minimapbg" style="position: absolute; right: 0px; top: 0px;">' +        '<div class="posy" id="posyt" style= color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
+    div.innerHTML = '<style>.grecaptcha-badge{display: none;}</style>   <div id="minimapbg" style="position: absolute; box-shadow: 0 0 15px 11px black; right: 0px; top: 0px;">' +        '<div class="posy" id="posyt" style= color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
         '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
         '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
@@ -60,7 +63,6 @@ function  init(){
         '</span> | <span id="follow-mouse" style="cursor:pointer;"Follow mous' +
         '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>'		+
-		'<span id="tet" style="position: absolute; right: 15px;">test</span>'
         '</div>' +
         '</div>';
     document.body.appendChild(div);
@@ -257,7 +259,7 @@ function loadTemplates() {
     var y_top = y_window * 1 - minimap.height / zoomlevel / 2;
     var y_bottom = y_window * 1 + minimap.height / zoomlevel / 2;
     /*
-	console.log("x_left : " + x_left);
+    console.log("x_left : " + x_left);
     console.log("x_right : " + x_right);
     console.log("y_top : " + y_top);
     console.log("y_bottom : " + y_bottom);
