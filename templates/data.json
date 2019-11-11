@@ -20,6 +20,13 @@
     "width": 33,
     "height": 49
    },
+  "duck": {
+    "name": "duck.png",
+    "x": 3456,
+    "y": -2942,
+    "width": 343,
+    "height": 500
+   },
   "SkyBase": {
     "name": "Skybase.png",
     "x": 1,
