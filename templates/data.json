@@ -20,6 +20,13 @@
     "width": 33,
     "height": 49
    },
+   "OcZone": {
+    "name": "OcZone.png",
+    "x": 3256,
+    "y": -3461,
+    "width": 200,
+    "height": 518
+   },
   "duck": {
     "name": "duck.png",
     "x": 3456,
