@@ -61,7 +61,6 @@ function init() {
         '</span> | <span id="follow-mouse" style="cursor:pointer;"Follow mous' +
         '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span> / ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
-        '<span id="test" style="cursor:pointer;font-weight:bold;">TEST</span>' +
         '</div>' +
         '</div>';
     document.body.appendChild(div);
