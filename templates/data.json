@@ -34,6 +34,13 @@
     "width": 343,
     "height": 500
    },
+  "som": {
+    "name": "som.png",
+    "x": 3951,
+    "y": -2890,
+    "width": 83,
+    "height": 83
+   },
   "SkyBase": {
     "name": "Skybase.png",
     "x": 1,
