@@ -10,16 +10,9 @@
     "name": "BJ.png",
     "x": 2905,
     "y": -3461,
-    "width": 840,
+    "width": 1191,
     "height": 518
    }, 
-    "sanitar": {
-    "name": "sanitar.png",
-    "x": 4048,
-    "y": 1271,
-    "width": 33,
-    "height": 49
-   },
   "som": {
     "name": "som.png",
     "x": 3952,
